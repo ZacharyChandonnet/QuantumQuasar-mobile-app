@@ -22,7 +22,10 @@ export default function App() {
         <Stack.Screen
           name="Details"
           component={DetailsScreen}
-          options={{ title: 'Détails' }}
+          options={{ title: 'Détails',
+          headerShown: false
+         }}
+          
         />
       </Stack.Navigator>
     </NavigationContainer>
