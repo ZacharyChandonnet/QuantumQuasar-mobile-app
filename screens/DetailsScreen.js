@@ -1,40 +1,57 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator, Image } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 
 export default function DetailsScreen() {
 
-    let [isLoading, setLoading] = useState(true);
-    let [error, setError] = useState();
-    let [resultat, setResultat] = useState();
+    const [isLoading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [cryptoList, setCryptoList] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.coingecko.com/api/v3/coins/list")
-            .then(res => res.json())
-            .then(resultat => {
-                setResultat(resultat);
-                setLoading(false);
+        const params = new URLSearchParams({
+            vs_currency: 'usd',
+            order: 'market_cap_desc',
+            per_page: 20,
+            page: 1,
+        });
+    
+        fetch(`https://api.coingecko.com/api/v3/coins/markets?${params}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
             },
-                (error) => {
-                    setLoading(false);
-                    setError(error);
-                }
-            )
+        })
+        .then(response => response.json())
+        .then(result => {
+            setCryptoList(result);
+            setLoading(false);
+        })
+        .catch(error => {
+            setLoading(false);
+            setError(error);
+        });
     }, []);
 
     if (isLoading) {
         return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
     }
+
     if (error) {
         return <Text>Erreur : {error.message}</Text>;
     }
-    console.log(resultat)
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Les cryptos</Text>
-            <Text style={styles.text}>Nom de la monaie : {resultat[366].name}</Text>
+            <Text style={styles.text}>Les 20 cryptos les plus populaires :</Text>
+            <FlatList
+                data={cryptoList}
+                keyExtractor={(item) => item.id.toString()}
+                renderItem={({ item }) => (
+                    <Text style={styles.text}>{item.name}</Text>
+                )}
+            />
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
