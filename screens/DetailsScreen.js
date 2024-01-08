@@ -4,8 +4,7 @@ import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image } from 'reac
 export default function DetailsScreen() {
 
     const [isLoading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const [cryptoList, setCryptoList] = useState([]);
+    const [resultat, setResultat] = useState([]);
 
     useEffect(() => {
         const params = new URLSearchParams({
@@ -14,37 +13,36 @@ export default function DetailsScreen() {
             per_page: 20,
             page: 1,
         });
-    
-        fetch(`https://api.coingecko.com/api/v3/coins/markets?${params}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-        .then(response => response.json())
-        .then(result => {
-            setCryptoList(result);
-            setLoading(false);
-        })
-        .catch(error => {
-            setLoading(false);
-            setError(error);
-        });
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?${params}`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                const result = await response.json();
+
+                setTimeout(() => {
+                    setResultat(result);
+                    setLoading(false);
+                }, 500);
+            } catch (error) {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
     }, []);
 
     if (isLoading) {
         return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
     }
-
-    if (error) {
-        return <Text>Erreur : {error.message}</Text>;
-    }
-
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Tendances</Text>
             <FlatList
-                data={cryptoList}
+                data={resultat}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
                     <View style={styles.itemContainer}>
