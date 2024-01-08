@@ -1,14 +1,48 @@
-import React from 'react';
-import { View, Text, StyleSheet, } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, ActivityIndicator, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 export default function DetailsScreen() {
+
+    let [isLoading, setLoading] = useState(true);
+    let [error, setError] = useState();
+    let [resultat, setResultat] = useState();
+
+    useEffect(() => {
+        fetch("https://api.coingecko.com/api/v3/coins/list")
+            .then(res => res.json())
+            .then(resultat => {
+                setResultat(resultat);
+                setLoading(false);
+            },
+                (error) => {
+                    setLoading(false);
+                    setError(error);
+                }
+            )
+    }, []);
+
+    if (isLoading) {
+        return <ActivityIndicator size="large" />;
+    }
+    if (error) {
+        return <Text>Erreur : {error.message}</Text>;
+    }
+    console.log(resultat)
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Les cryptos</Text>
-            <StatusBar style="auto" />
+            <Text style={styles.text}>Nom de la monaie : {resultat[366].name}</Text>
+            {/* <StatusBar style="auto"/> */}
         </View>
-    );
+    )
+
+    // return (
+    //     <View style={styles.container}>
+    //         <Text style={styles.text}>Les cryptos</Text>
+    //         <StatusBar style="auto" />
+    //     </View>
+    // );
 }
 
 const styles = StyleSheet.create({
@@ -22,5 +56,5 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
-      },
+    },
 });
