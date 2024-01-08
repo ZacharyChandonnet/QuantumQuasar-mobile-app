@@ -1,33 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image, TouchableOpacity } from 'react-native';
 
-export default function DetailsScreen() {
+export default function DetailsScreen({ navigation }) {
 
     const [isLoading, setLoading] = useState(true);
-    const [resultat, setResultat] = useState([]);
+    const [trendingCoins, setTrendingCoins] = useState([]);
 
     useEffect(() => {
-        const params = new URLSearchParams({
-            vs_currency: 'usd',
-            order: 'market_cap_desc',
-            per_page: 20,
-            page: 1,
-        });
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?${params}`, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+                const response = await fetch('https://api.coingecko.com/api/v3/search/trending');
                 const result = await response.json();
-
+                const trendingData = result.coins || [];
                 setTimeout(() => {
-                    setResultat(result);
+                    setTrendingCoins(trendingData);
                     setLoading(false);
                 }, 500);
             } catch (error) {
+                console.error("Error fetching trending coins:", error);
                 setLoading(false);
             }
         };
@@ -38,20 +28,33 @@ export default function DetailsScreen() {
     if (isLoading) {
         return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
     }
+
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Tendances</Text>
+            <View style={styles.navBar}>
+                <Text style={styles.title}>Tendances</Text>
+                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Nft')}>
+                    <Text style={styles.navText}>NFT</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Search')}>
+                    <Text style={styles.navText}>Recherche</Text>
+                </TouchableOpacity>
+            </View>
             <FlatList
-                data={resultat}
-                keyExtractor={(item) => item.id.toString()}
+                showsVerticalScrollIndicator={false}
+                data={trendingCoins}
+                keyExtractor={(item) => item.item.id.toString()}
                 renderItem={({ item }) => (
-                    <View style={styles.itemContainer}>
+                    <TouchableOpacity style={styles.itemContainer} onPress={() => navigation.navigate('Coin', { id: item.item.id })}>
                         <Image
                             style={styles.cryptoImage}
-                            source={{ uri: item.image }}
+                            source={{ uri: item.item.large }}
                         />
-                        <Text style={styles.text}>{item.name} ({item.symbol})</Text>
-                    </View>
+                        <View style={styles.textContainer}>
+                            <Text style={styles.cryptoName}>{item.item.name}</Text>
+                            <Text style={styles.cryptoSymbol}>{item.item.symbol}</Text>
+                        </View>
+                    </TouchableOpacity>
                 )}
             />
         </View>
@@ -61,37 +64,58 @@ export default function DetailsScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000000',
+        backgroundColor: '#121212',
         alignItems: 'center',
-        justifyContent: 'center',
     },
-    text: {
+    textContainer: {
+        marginLeft: 15,
+    },
+    cryptoName: {
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
     },
+    cryptoSymbol: {
+        color: '#888',
+        fontSize: 14,
+    },
     isLoading: {
         flex: 1,
-        backgroundColor: '#000000',
+        backgroundColor: '#121212',
         alignItems: 'center',
         justifyContent: 'center',
     },
     itemContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 10,
+        padding: 75,
         borderBottomWidth: 1,
-        borderBottomColor: '#333333',
+        borderBottomColor: '#333',
+        width: '100%',
     },
     cryptoImage: {
-        width: 30,
-        height: 30,
-        marginRight: 10,
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+    },
+    navBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+        paddingHorizontal: 20,
+        paddingTop: 60,
+    },
+    navItem: {
+        padding: 10,
+    },
+    navText: {
+        color: 'white',
+        fontWeight: 'bold',
     },
     title: {
-        color: 'white',
-        fontSize: 20,
+        color: 'orange',
+        fontSize: 24,
         fontWeight: 'bold',
-        marginTop: 60,
     },
 });
