@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image } from 'react-native';
 
 export default function DetailsScreen() {
 
@@ -42,12 +42,18 @@ export default function DetailsScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Les 20 cryptos les plus populaires :</Text>
+            <Text style={styles.title}>Tendances</Text>
             <FlatList
                 data={cryptoList}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
-                    <Text style={styles.text}>{item.name}</Text>
+                    <View style={styles.itemContainer}>
+                        <Image
+                            style={styles.cryptoImage}
+                            source={{ uri: item.image }}
+                        />
+                        <Text style={styles.text}>{item.name} ({item.symbol})</Text>
+                    </View>
                 )}
             />
         </View>
@@ -71,5 +77,23 @@ const styles = StyleSheet.create({
         backgroundColor: '#000000',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    itemContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: '#333333',
+    },
+    cryptoImage: {
+        width: 30,
+        height: 30,
+        marginRight: 10,
+    },
+    title: {
+        color: 'white',
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginTop: 60,
     },
 });
