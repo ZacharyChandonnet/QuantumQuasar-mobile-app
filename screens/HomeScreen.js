@@ -5,12 +5,12 @@ import { StatusBar } from 'expo-status-bar';
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Bienvenue sur QuantumQuasar</Text>
-      <Button
-        title="Voir les détails"
-        onPress={() => navigation.navigate('Details')}
-      />
       <StatusBar style="auto" />
+      <Text style={styles.text}>Bienvenue sur QuantumQuasar</Text>
+        <Button
+            title="Voir le marché"
+            onPress={() => navigation.navigate('Details')}
+        />
     </View>
   );
 }
@@ -18,8 +18,11 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    color: 'white', 
   },
 });
