@@ -23,7 +23,7 @@ export default function DetailsScreen() {
     }, []);
 
     if (isLoading) {
-        return <ActivityIndicator size="large" />;
+        return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
     }
     if (error) {
         return <Text>Erreur : {error.message}</Text>;
@@ -33,16 +33,8 @@ export default function DetailsScreen() {
         <View style={styles.container}>
             <Text style={styles.text}>Les cryptos</Text>
             <Text style={styles.text}>Nom de la monaie : {resultat[366].name}</Text>
-            {/* <StatusBar style="auto"/> */}
         </View>
     )
-
-    // return (
-    //     <View style={styles.container}>
-    //         <Text style={styles.text}>Les cryptos</Text>
-    //         <StatusBar style="auto" />
-    //     </View>
-    // );
 }
 
 const styles = StyleSheet.create({
@@ -56,5 +48,11 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
+    },
+    isLoading: {
+        flex: 1,
+        backgroundColor: '#000000',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 });
