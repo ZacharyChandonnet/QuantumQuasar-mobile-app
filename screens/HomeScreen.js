@@ -27,7 +27,7 @@ export default function HomeScreen({ navigation }) {
                     </View>
                     <View style={styles.bottomContainer}>
                         <Text style={styles.text}>Les cryptos sont le futur de la finance</Text>
-                        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Details')}>
+                        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
                             <Text style={styles.buttonText}>Débutons</Text>
                         </TouchableOpacity>
                     </View>

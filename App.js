@@ -6,6 +6,7 @@ import DetailsScreen from './screens/DetailsScreen';
 import SearchScreen from './screens/Search';
 import Nft from './screens/Nft';
 import Coin from './screens/Coin';
+import Login from './screens/Login';
 
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +23,16 @@ export default function App() {
             headerShown: false
           }}
         />
+
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            title: 'Login',
+            headerShown: false
+          }}
+        />
+
         <Stack.Screen
           name="Details"
           component={DetailsScreen}
