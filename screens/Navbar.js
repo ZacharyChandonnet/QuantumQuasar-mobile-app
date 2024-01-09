@@ -5,11 +5,12 @@ import { View, Text, TouchableOpacity, StyleSheet, Modal, Button } from 'react-n
 export default function NavBar({ navigation }) {
 
     const [popUp, setPopUp] = useState(false);
+    const [notification, setNotification] = useState([]);
 
     const togglePopUp = () => {
         setPopUp(!popUp);
     }
-    
+
     return (
         <View style={styles.navBar}>
             <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Details')}>
@@ -22,7 +23,7 @@ export default function NavBar({ navigation }) {
                 <Text style={styles.navText}>Favoris</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.navItem} onPress={togglePopUp}>
-                <Ionicons 
+                <Ionicons
                     name="notifications-outline"
                     size={24}
                     color="#ccc"
@@ -37,7 +38,13 @@ export default function NavBar({ navigation }) {
             >
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                        <Text style={styles.modalText}>Voici votre pop-up de notifications!</Text>
+                        {notification.length === 0 ? (
+                            <Text style={styles.modalText}>Aucune notification pour le moment.</Text>
+                        ) : (
+                            notification.map((notif, index) => (
+                                <Text key={index} style={styles.modalText}>{notif}</Text>
+                            ))
+                        )}
                         <Button title="Fermer" onPress={togglePopUp} />
                     </View>
                 </View>
@@ -73,7 +80,7 @@ const styles = StyleSheet.create({
     },
     modalView: {
         margin: 20,
-        backgroundColor: 'white',
+        backgroundColor: '#333',
         borderRadius: 20,
         padding: 35,
         alignItems: 'center',
@@ -85,9 +92,12 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 4,
         elevation: 5,
+        width: '85%',
+        maxWidth: 400,
     },
     modalText: {
         marginBottom: 15,
         textAlign: 'center',
+        color: 'white',
     },
 });
