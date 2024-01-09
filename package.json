@@ -10,6 +10,7 @@
   },
   "proxy": "https://api.coingecko.com",
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^19.0.0",
     "@react-native/metro-config": "^0.73.3",
     "@react-navigation/native": "^6.1.9",
