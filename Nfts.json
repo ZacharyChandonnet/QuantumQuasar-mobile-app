@@ -1,0 +1,1570 @@
+[
+    {
+        "id": "voxelglyph",
+        "contract_address": "0xa94161fbe69e08ff5a36dfafa61bdf29dd2fb928",
+        "asset_platform_id": "ethereum",
+        "name": "Voxelglyph",
+        "symbol": "#",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/3473/small/voxelglyph.png?1694503821"
+        },
+        "description": "The Voxelglyph represents membership to Fingerprints DAO and is the result of a direct partnership between Larva Labs and Fingerprints, granting access to all member perks and exposure to its renowned collection.\n\nIt is an extension of Autoglyph #134, one of the 26 Autoglyphs in the Fingerprints Collection. It consists of a script in Java stored entirely on-chain that, when executed, will take Autoglyph #134's characters as input and generate coordinates for the 3D artwork.\n\nMore information about Fingerprints DAO is available at <a rel=\"nofollow\" target=\"_blank\" href=\"https://fingerprintsdao.xyz.\">https://fingerprintsdao.xyz.</a>",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 4.35,
+            "usd": 9843.83
+        },
+        "market_cap": {
+            "native_currency": 817.61,
+            "usd": 1850640
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.0617,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.0617048366899087,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.061704836690118,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 84,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 188,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "https://migration.fingerprintsdao.xyz",
+            "twitter": "https://twitter.com/FingerprintsDAO",
+            "discord": "https://discord.gg/pw884KuTFB"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -3.394572214631532,
+            "native_currency": -0.25229357798165136
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -1.3487186115695096,
+            "native_currency": -1.6063348416289591
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -13.112807169152546,
+            "native_currency": -10.881147540983607
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 0.77103065308828,
+            "native_currency": -6.069114470842334
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": 148.6070879083209,
+            "native_currency": 73.96000000000001
+        },
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "link": "https://etherscan.io/token/0xa94161fbe69e08ff5a36dfafa61bdf29dd2fb928"
+            },
+            {
+                "name": "Ethplorer",
+                "link": "https://ethplorer.io/address/0xa94161fbe69e08ff5a36dfafa61bdf29dd2fb928"
+            }
+        ]
+    },
+    {
+        "id": "ethlings-wearables",
+        "contract_address": "0x2b9bd413852401a7e09c77de1fab53915f8f9336",
+        "asset_platform_id": "polygon-pos",
+        "name": "Ethlings Wearables",
+        "symbol": "🥽",
+        "image": {
+            "large": "https://assets.coingecko.com/nft_contracts/images/1605/large/ethlings-wearables.png?1663575334"
+        },
+        "description": "A universe of customizable NFTs.",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.00066,
+            "usd": 1.5
+        },
+        "market_cap": {
+            "native_currency": 0.57024,
+            "usd": 1295.02
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.29402,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.2940211197017892,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.294021119702585,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 1374,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 864,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "https://ethlings.com",
+            "twitter": "https://twitter.com/ethlings",
+            "discord": "https://discord.gg/w3B6ceXEzC"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -3.159090382873655,
+            "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -0.16182909563957315,
+            "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -2.646462313200107,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 8.46388132434609,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -79.81499096193042,
+            "native_currency": -88.62068965517241
+        },
+        "explorers": [
+            {
+                "name": "Polygonscan",
+                "link": "https://polygonscan.com/token/0x2b9bd413852401a7e09c77de1fab53915f8f9336"
+            }
+        ]
+    },
+    {
+        "id": "angry-ape-army-evolution-collection",
+        "contract_address": "0x74f1716a9f452dd36d945368d806cd491290b240",
+        "asset_platform_id": "ethereum",
+        "name": "Angry Ape Army Evolution Collection",
+        "symbol": "AAAEVO",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/1054/small/angry-ape-army-evolution-collection.png?1658077092"
+        },
+        "description": "The Angry Ape Army have modified their own kind to create \"Evolved Apes.\" \nThese lab grown apes are now roaming the metaverse destroying and taking control of all that come in it's path. Take control of an \"Evolved Ape\" and have superior battle advantage or spawn a Goliath x Golem by combining 4 evo apes. \n\n\n**Join the Revolution!!!**\n\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/collection/angry-ape-army\">Angry Ape Army</a>\n\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/collection/angry-ape-army\">Angry Ape Army</a>\n\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/collection/angry-ape-army\">Angry Ape Army</a>\n\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/collection/angry-ape-army\">Angry Ape Army</a>\n\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/collection/angry-ape-army\">Angry Ape Army</a>\n",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.0047,
+            "usd": 10.69
+        },
+        "market_cap": {
+            "native_currency": 26.05,
+            "usd": 59263
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -2.95145,
+        "floor_price_24h_percentage_change": {
+            "usd": -2.951454189644096,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -2.9514541896437456,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": -100,
+            "native_currency": -100
+        },
+        "number_of_unique_addresses": 1970,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": -100,
+        "total_supply": 5543,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": -100,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "https://angryapearmy.com",
+            "twitter": "https://twitter.com/angryapearmy",
+            "discord": "https://discord.gg/angryapearmy"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -9.083018737381176,
+            "native_currency": -5.999999999999999
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -29.880799870720704,
+            "native_currency": -29.84027466786087
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -42.921515469233356,
+            "native_currency": -41.242655331916495
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": -49.62863393435512,
+            "native_currency": -53
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -69.76374333372874,
+            "native_currency": -82.87449392712549
+        },
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "link": "https://etherscan.io/token/0x74f1716a9f452dd36d945368d806cd491290b240"
+            },
+            {
+                "name": "Ethplorer",
+                "link": "https://ethplorer.io/address/0x74f1716a9f452dd36d945368d806cd491290b240"
+            }
+        ]
+    },
+    {
+        "id": "arbitrumgoblinpunks",
+        "contract_address": "0x3154715136672582f85603E963E99c00F799a048",
+        "asset_platform_id": "arbitrum-one",
+        "name": "ArbitrumGoblinPunks",
+        "symbol": "ABG",
+        "image": {
+            "small": "missing_small.png"
+        },
+        "description": "",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.002,
+            "usd": 4.54
+        },
+        "market_cap": {
+            "native_currency": 0.888,
+            "usd": 2016.35
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.11334,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.1133389250583203,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.113338925058399,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 160,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 444,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/",
+            "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -51.6106656394969,
+            "native_currency": -50
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -49.82448662017415,
+            "native_currency": -50
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -51.32444971522293,
+            "native_currency": -50
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": -46.36595428577159,
+            "native_currency": -50
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -28.98873228085482,
+            "native_currency": -60
+        },
+        "explorers": [
+            {
+                "name": "Arbiscan",
+                "link": "https://arbiscan.io/token/0x3154715136672582f85603E963E99c00F799a048"
+            }
+        ]
+    },
+    {
+        "id": "acid-pepes-by-lors",
+        "contract_address": "0x1e816af0653a63dc844a8c663f18a0285a8fa6f2",
+        "asset_platform_id": "ethereum",
+        "name": "ACID PEPES by LORS",
+        "symbol": "ACDPPS",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/3699/small/acid-pepes-by-lors.png?1700265673"
+        },
+        "description": "A collection featuring a set of Acid Pepes handcrafted with a clean, minimalist style by LORS.",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.56,
+            "usd": 1274.47
+        },
+        "market_cap": {
+            "native_currency": 112,
+            "usd": 254893
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -0.63568,
+        "floor_price_24h_percentage_change": {
+            "usd": -0.6356843472940626,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -0.6356843472936652,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 129,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 200,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/Lors_eth",
+            "discord": "https://discord.gg/jNwGuytde9"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": 11.729581887648658,
+            "native_currency": 17.89721888881871
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": 19.679647080132373,
+            "native_currency": 12.002240044800896
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "link": "https://etherscan.io/token/0x1e816af0653a63dc844a8c663f18a0285a8fa6f2"
+            },
+            {
+                "name": "Ethplorer",
+                "link": "https://ethplorer.io/address/0x1e816af0653a63dc844a8c663f18a0285a8fa6f2"
+            }
+        ]
+    },
+    {
+        "id": "1btc",
+        "contract_address": "0xe8098f0b3e64321318705a6d48eccabd2497e5e8",
+        "asset_platform_id": "binance-smart-chain",
+        "name": "1BTC",
+        "symbol": "1BTC",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/2637/small/1btc.png?1674040156"
+        },
+        "description": "Refusing to speculate on NFT prices, we have to rely on the profit and loss of the 1btc project after entering the market to determine the rise and fall of NFT, instead of speculating with a picture and certain concepts. NFT itself is an equity certificate.\nWe will gradually let partners who can really help the development of the project own these 400 NFT, and they own 50% of the original shares of the 1btc <a rel=\"nofollow\" target=\"_blank\" href=\"//project.Our\">project.Our</a> software will run for a long <a rel=\"nofollow\" target=\"_blank\" href=\"//time.After\">time.After</a> the project starts operating, the partners who hold NFT will receive dividends automatically issued by the smart contract every day until the project is eliminated by the market. After the software project is developed, the project wallet address and fee income wallet will be made public.",
+        "native_currency": "binancecoin",
+        "native_currency_symbol": "BNB",
+        "floor_price": {
+            "native_currency": 0.2,
+            "usd": 59.99
+        },
+        "market_cap": {
+            "native_currency": 80,
+            "usd": 23994
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": 0.83891,
+        "floor_price_24h_percentage_change": {
+            "usd": 0.8389117495312083,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": 0.8389117495310442,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 371,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 400,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "http://www.btcgo.vip",
+            "twitter": "https://twitter.com/1btcTeam",
+            "discord": "https://discord.gg/7cWtmHJ5AB"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": 0.0538503724958591,
+            "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -0.5445768373512915,
+            "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -5.740911837150173,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": -77.89794876685279,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -34.28140975082184,
+            "native_currency": 0
+        },
+        "explorers": [
+            {
+                "name": "Bscscan",
+                "link": "https://bscscan.com/token/0xe8098f0b3e64321318705a6d48eccabd2497e5e8"
+            },
+            {
+                "name": "Binplorer",
+                "link": "https://binplorer.com/address/0xe8098f0b3e64321318705a6d48eccabd2497e5e8"
+            }
+        ]
+    },
+    {
+        "id": "arbiclown",
+        "contract_address": "0x3597e21BfCDa0325b60beD75033CcB6eb94baaB4",
+        "asset_platform_id": "arbitrum-one",
+        "name": "ArbiClown",
+        "symbol": "ACW",
+        "image": {
+            "small": "missing_small.png"
+        },
+        "description": "",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.0029,
+            "usd": 6.58
+        },
+        "market_cap": {
+            "native_currency": 0.7743,
+            "usd": 1758.18
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.11334,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.113338925058356,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.1133389250582533,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 124,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 267,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/",
+            "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -3.2213312789937714,
+            "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": 0.35102675965166974,
+            "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -2.6488994304459275,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 7.268091428456781,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": 14.442853082815512,
+            "native_currency": -35.555555555555564
+        },
+        "explorers": [
+            {
+                "name": "Arbiscan",
+                "link": "https://arbiscan.io/token/0x3597e21BfCDa0325b60beD75033CcB6eb94baaB4"
+            }
+        ]
+    },
+    {
+        "id": "ag3dnft",
+        "contract_address": "0x4bafc595a9ff4a5f4936689a0389c148a65456a2",
+        "asset_platform_id": "binance-smart-chain",
+        "name": "AG3DNFT",
+        "symbol": "AGN",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/2996/small/ag3dnft.png?1677829744"
+        },
+        "description": "",
+        "native_currency": "binancecoin",
+        "native_currency_symbol": "BNB",
+        "floor_price": {
+            "native_currency": 0.387929,
+            "usd": 116.34
+        },
+        "market_cap": {
+            "native_currency": 1184.35,
+            "usd": 355196
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -0.171,
+        "floor_price_24h_percentage_change": {},
+        "market_cap_24h_percentage_change": {},
+        "volume_24h_percentage_change": {},
+        "number_of_unique_addresses": 953,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 3053,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/",
+            "discord": ""
+        },
+        "floor_price_7d_percentage_change": {},
+        "floor_price_14d_percentage_change": {},
+        "floor_price_30d_percentage_change": {},
+        "floor_price_60d_percentage_change": {},
+        "floor_price_1y_percentage_change": {},
+        "explorers": [
+            {
+                "name": "Bscscan",
+                "link": "https://bscscan.com/token/0x4bafc595a9ff4a5f4936689a0389c148a65456a2"
+            },
+            {
+                "name": "Binplorer",
+                "link": "https://binplorer.com/address/0x4bafc595a9ff4a5f4936689a0389c148a65456a2"
+            }
+        ]
+    },
+    {
+        "id": "midnight-society-founders-access-pass",
+        "contract_address": "0x89a4875c190565505b7891b700c2c6dc91816a47",
+        "asset_platform_id": "polygon-pos",
+        "name": "AccessPass",
+        "symbol": "AccessPass",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/3839/small/midnight-society-founders-access-pass.png?1703463535"
+        },
+        "description": "This limited series of Midnight Society Access Passes grants the holder studio-specific perks including but not limited to: a one-of-a-kind \"Variant\" PFP (profile pic) with unique VisorCortex, Call Sign, and other attributes of various rarity. Founders are entitled to voting rights on game features, exclusive access to studio events, first dibs on merchandise, early access to the latest dev build, and more.\r\n\r\n<a rel=\"nofollow\" target=\"_blank\" href=\"https://opensea.io/midnightsociety\">https://opensea.io/midnightsociety</a>",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.1789,
+            "usd": 405.87
+        },
+        "market_cap": {
+            "native_currency": 1789,
+            "usd": 4058729
+        },
+        "volume_24h": {
+            "native_currency": 0.15,
+            "usd": 340.31
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.48456,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.484561859133315,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.484561859133315,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": -71.73006635072538,
+            "native_currency": -70.70941789849837
+        },
+        "number_of_unique_addresses": 9303,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": -71.73007,
+        "total_supply": 10000,
+        "one_day_sales": 1,
+        "one_day_sales_24h_percentage_change": -66.6666666666667,
+        "one_day_average_sale_price": 0.15,
+        "one_day_average_sale_price_24h_percentage_change": -12.1282536954951,
+        "links": {
+            "homepage": "https://midnightsociety.com/",
+            "twitter": "https://twitter.com/12am",
+            "discord": "https://discord.gg/midnight-society"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -3.3836460097248042,
+            "native_currency": 0.018002122237764425
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -8.078005124827861,
+            "native_currency": -8.228172771109058
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -8.078005124827861,
+            "native_currency": -8.228172771109058
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": -8.078005124827861,
+            "native_currency": -8.228172771109058
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -8.078005124827861,
+            "native_currency": -8.228172771109058
+        },
+        "explorers": [
+            {
+                "name": "Polygonscan",
+                "link": "https://polygonscan.com/token/0x89a4875c190565505b7891b700c2c6dc91816a47"
+            }
+        ]
+    },
+    {
+        "id": "adidas-for-prada-re-source",
+        "contract_address": "0x7dec38e3874ecbc842cc61e66c1386aca0c0ea1f",
+        "asset_platform_id": "polygon-pos",
+        "name": "adidas for Prada Re-Source",
+        "symbol": "AFPR",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/1580/small/adidas-for-prada-re-source.png?1663573418"
+        },
+        "description": "adidas for Prada re-source is a first-of-its-kind NFT project featuring creator-owned art, in collaboration with digital artist Zach Lieberman.\r\n\r\nAs an interactive, dynamic platform, the project enables the community to contribute to a large scale artwork through play and discover the transformative benefits of web3, co-creation, digital ownership and NFTs.\r\n\r\nTerms and conditions: <a rel=\"nofollow\" target=\"_blank\" href=\"https://adidas.com/prada-nft/terms\">https://adidas.com/prada-nft/terms</a>\r\n",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.01198,
+            "usd": 27.26
+        },
+        "market_cap": {
+            "native_currency": 36.3,
+            "usd": 82584
+        },
+        "volume_24h": {
+            "native_currency": 0.0103,
+            "usd": 23.43
+        },
+        "floor_price_in_usd_24h_percentage_change": 157.12233,
+        "floor_price_24h_percentage_change": {
+            "usd": 157.12233042690053,
+            "native_currency": 166.22222222222223
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": 157.12233042690033,
+            "native_currency": 166.22222222222223
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 2718,
+        "number_of_unique_addresses_24h_percentage_change": -0.03678,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 3030,
+        "one_day_sales": 2,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0.00515,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/",
+            "discord": "https://discord.gg/invite/adidasoriginals"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -77.48880080001855,
+            "native_currency": -76.73650892284986
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -76.66388247419688,
+            "native_currency": -76.7378640776699
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": 77.41237661185035,
+            "native_currency": 82.06686930091186
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 86.6212323870632,
+            "native_currency": 73.62318840579711
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -37.654014414593284,
+            "native_currency": -64.69710083044325
+        },
+        "explorers": [
+            {
+                "name": "Polygonscan",
+                "link": "https://polygonscan.com/token/0x7dec38e3874ecbc842cc61e66c1386aca0c0ea1f"
+            }
+        ]
+    },
+    {
+        "id": "abstraction-by-anon",
+        "contract_address": "0xacB9d51b8e41dF0a92F4cc497a2f8E1809fF9802",
+        "asset_platform_id": "ethereum",
+        "name": "Abstraction by anon",
+        "symbol": "abya",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/2243/small/aaaaaa.png?1669950288"
+        },
+        "description": "My name is not important but the art is. This is your genesis pass to my creations. I will not share my Twitter although it is here in",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.0199,
+            "usd": 45.2
+        },
+        "market_cap": {
+            "native_currency": 8,
+            "usd": 18171.1
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.30105,
+        "floor_price_24h_percentage_change": {
+            "usd": -3.3010482330092223,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -3.301048233009538,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 145,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 402,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "https://www.anonproject.xyz/",
+            "twitter": "https://twitter.com/byANONproject",
+            "discord": "https://discord.gg/byanon"
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -2.7654083639426736,
+            "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -0.18101712344982,
+            "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -2.653536481189729,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 8.428168063311716,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -94.67886888712785,
+            "native_currency": -96.98484848484848
+        },
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "link": "https://etherscan.io/token/0xacB9d51b8e41dF0a92F4cc497a2f8E1809fF9802"
+            },
+            {
+                "name": "Ethplorer",
+                "link": "https://ethplorer.io/address/0xacB9d51b8e41dF0a92F4cc497a2f8E1809fF9802"
+            }
+        ]
+    },
+    {
+        "id": "8SIAN",
+        "contract_address": "0x198478f870d97d62d640368d111b979d7ca3c38f",
+        "asset_platform_id": "ethereum",
+        "name": "8SIAN",
+        "symbol": "8SIAN",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/247/small/8sian.png?1643036979"
+        },
+        "description": "",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+            "native_currency": 0.0125,
+            "usd": 28.42
+        },
+        "market_cap": {
+            "native_currency": 111.1,
+            "usd": 252608
+        },
+        "volume_24h": {
+            "native_currency": 0.0225,
+            "usd": 51.16
+        },
+        "floor_price_in_usd_24h_percentage_change": -2.70515,
+        "floor_price_24h_percentage_change": {
+            "usd": -2.7051505824651887,
+            "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -2.705150582465353,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 4370,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 8888,
+        "one_day_sales": 2,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0.01125,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "http://8sian.io",
+            "twitter": "https://twitter.com/8sianNFT",
+            "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": 2.262000214992172,
+            "native_currency": 6.027556307418163
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": 38.59948113919282,
+            "native_currency": 38.88888888888889
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": 34.67362277503826,
+            "native_currency": 38.88888888888889
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": -7.482169916977528,
+            "native_currency": -13.188415862212654
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -26.490095666455975,
+            "native_currency": -58.333333333333336
+        },
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "link": "https://etherscan.io/token/0x198478f870d97d62d640368d111b979d7ca3c38f"
+            },
+            {
+                "name": "Ethplorer",
+                "link": "https://ethplorer.io/address/0x198478f870d97d62d640368d111b979d7ca3c38f"
+            }
+        ]
+    },
+    {
+        "id": "agame3dnft",
+        "contract_address": "0x9d8f8ea82b12a6e48d8423f0ec9907ad599233a8",
+        "asset_platform_id": "binance-smart-chain",
+        "name": "AGame3DNFT",
+        "symbol": "AGN",
+        "image": {
+            "small": "https://assets.coingecko.com/nft_contracts/images/2357/small/agame3dnft.png?1671504360"
+        },
+        "description": "$AG (A Game) is a global metaverse game platform with Play to Earn model. The vision for the A Game Project is to develop a decentralized RPG metaverse that will last beyond 100 years. Join our community to participate in designing game mechanics, strategy and lore for the Metaverse. You can participate in decisions around rules and rewards and earn AG for your contributions to the community.",
+        "native_currency": "binancecoin",
+        "native_currency_symbol": "BNB",
+        "floor_price": {
+            "native_currency": 0.116689,
+            "usd": 34.94
+        },
+        "market_cap": {
+            "native_currency": 326.61,
+            "usd": 97797
+        },
+        "volume_24h": {
+            "native_currency": 0,
+            "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -4.96692,
+        "floor_price_24h_percentage_change": {
+            "usd": -4.966919574785522,
+            "native_currency": 0.6590767475475121
+        },
+        "market_cap_24h_percentage_change": {
+            "usd": -4.966919574785733,
+            "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+            "usd": 0,
+            "native_currency": 0
+        },
+        "number_of_unique_addresses": 712,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 2799,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+            "homepage": "",
+            "twitter": "https://twitter.com/",
+            "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+            "usd": -10.101088983612282,
+            "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+            "usd": -10.766891562478099,
+            "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+            "usd": -88.30880490196948,
+            "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+            "usd": 4.1999694546244655,
+            "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+            "usd": -40.07268919284083,
+            "native_currency": 0
+        },
+        "explorers": [
+            {
+                "name": "Bscscan",
+                "link": "https://bscscan.com/token/0x9d8f8ea82b12a6e48d8423f0ec9907ad599233a8"
+            },
+            {
+                "name": "Binplorer",
+                "link": "https://binplorer.com/address/0x9d8f8ea82b12a6e48d8423f0ec9907ad599233a8"
+            }
+        ]
+    },
+    {
+        "id": "abjo-sound-drops",
+        "contract_address": "0x2f04d6f5881a0d49b870bea2d03853df7eb46101",
+        "asset_platform_id": "ethereum",
+        "name": "AbJo | Sound Drops",
+        "symbol": "ABJONIAN",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/2026/small/abjo-sound-drops.?1664760237"
+        },
+        "description": "All of AbJo's latest drops on <a rel=\"nofollow\" target=\"_blank\" href=\"//Sound.xyz.\">Sound.xyz.</a>..",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.9999,
+          "usd": 2271.2
+        },
+        "market_cap": {
+          "native_currency": 111.99,
+          "usd": 254375
+        },
+        "volume_24h": {
+          "native_currency": 0,
+          "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.06952,
+        "floor_price_24h_percentage_change": {
+          "usd": -3.0695242040704858,
+          "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -3.0695242040707535,
+          "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+          "usd": 0,
+          "native_currency": 0
+        },
+        "number_of_unique_addresses": 98,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 112,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+          "homepage": "https://sound.xyz/abjo",
+          "twitter": "https://twitter.com/",
+          "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": -3.1959223781262236,
+          "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": 0.39464195472155755,
+          "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": 164.5830021992324,
+          "native_currency": 171.71195652173913
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 731.296607340556,
+          "native_currency": 675.1162790697674
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": 886.4662815921756,
+          "native_currency": 455.5
+        },
+        "explorers": [
+          {
+            "name": "Etherscan",
+            "link": "https://etherscan.io/token/0x2f04d6f5881a0d49b870bea2d03853df7eb46101"
+          },
+          {
+            "name": "Ethplorer",
+            "link": "https://ethplorer.io/address/0x2f04d6f5881a0d49b870bea2d03853df7eb46101"
+          }
+        ]
+      },
+      {
+        "id": "1337-skulls",
+        "contract_address": "0x9251dEC8DF720C2ADF3B6f46d968107cbBADf4d4",
+        "asset_platform_id": "ethereum",
+        "name": "1337 skulls",
+        "symbol": "1337skulls",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/2233/small/aaaaaa.png?1669871375"
+        },
+        "description": "1337 skulls is a collection of 7,331 pixel art skulls, deployed fully on-chain with a public domain license. 600+ traits created from new, original art and referencing 30+ existing cc0 NFT projects. Free mint. 0% royalties. No roadmap. Just 1337.\r\n\r\n",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.0296,
+          "usd": 67.45
+        },
+        "market_cap": {
+          "native_currency": 217,
+          "usd": 494465
+        },
+        "volume_24h": {
+          "native_currency": 0.168993,
+          "usd": 385.08
+        },
+        "floor_price_in_usd_24h_percentage_change": 4.8383,
+        "floor_price_24h_percentage_change": {
+          "usd": 4.838302540517663,
+          "native_currency": 7.640277828284665
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": 4.838302540517763,
+          "native_currency": 7.640277828284665
+        },
+        "volume_24h_percentage_change": {
+          "usd": -27.196264576411032,
+          "native_currency": -25.250465545229762
+        },
+        "number_of_unique_addresses": 2534,
+        "number_of_unique_addresses_24h_percentage_change": -0.1576,
+        "volume_in_usd_24h_percentage_change": -27.19626,
+        "total_supply": 7331,
+        "one_day_sales": 6,
+        "one_day_sales_24h_percentage_change": 50,
+        "one_day_average_sale_price": 0.0281655,
+        "one_day_average_sale_price_24h_percentage_change": -50.1669770301532,
+        "links": {
+          "homepage": "https://1337skulls.xyz/",
+          "twitter": "https://twitter.com/1337skulls",
+          "discord": "https://discord.gg/1337skulls"
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": -17.426405517467742,
+          "native_currency": -14.562561108098905
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": -25.394870117982197,
+          "native_currency": -25.31745003699562
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": -39.9072771518199,
+          "native_currency": -38.20907693629581
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 40.28932317127051,
+          "native_currency": 30.973451327433633
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": -53.15007837374595,
+          "native_currency": -73.54781054512958
+        },
+        "explorers": [
+          {
+            "name": "Etherscan",
+            "link": "https://etherscan.io/token/0x9251dEC8DF720C2ADF3B6f46d968107cbBADf4d4"
+          },
+          {
+            "name": "Ethplorer",
+            "link": "https://ethplorer.io/address/0x9251dEC8DF720C2ADF3B6f46d968107cbBADf4d4"
+          }
+        ]
+      },
+      {
+        "id": "ethlings-wearables",
+        "contract_address": "0x2b9bd413852401a7e09c77de1fab53915f8f9336",
+        "asset_platform_id": "polygon-pos",
+        "name": "Ethlings Wearables",
+        "symbol": "🥽",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/1605/small/ethlings-wearables.png?1663575334"
+        },
+        "description": "A universe of customizable NFTs.",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.00066,
+          "usd": 1.5
+        },
+        "market_cap": {
+          "native_currency": 0.57024,
+          "usd": 1295.02
+        },
+        "volume_24h": {
+          "native_currency": 0,
+          "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.29402,
+        "floor_price_24h_percentage_change": {
+          "usd": -3.2940211197017892,
+          "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -3.294021119702585,
+          "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+          "usd": 0,
+          "native_currency": 0
+        },
+        "number_of_unique_addresses": 1374,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 864,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+          "homepage": "https://ethlings.com",
+          "twitter": "https://twitter.com/ethlings",
+          "discord": "https://discord.gg/w3B6ceXEzC"
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": -3.159090382873655,
+          "native_currency": 0
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": -0.16182909563957315,
+          "native_currency": 0
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": -2.646462313200107,
+          "native_currency": 0
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 8.46388132434609,
+          "native_currency": 0
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": -79.81499096193042,
+          "native_currency": -88.62068965517241
+        },
+        "explorers": [
+          {
+            "name": "Polygonscan",
+            "link": "https://polygonscan.com/token/0x2b9bd413852401a7e09c77de1fab53915f8f9336"
+          }
+        ]
+      },
+      {
+        "id": "8liens",
+        "contract_address": "0x740c178e10662bBb050BDE257bFA318dEfE3cabC",
+        "asset_platform_id": "ethereum",
+        "name": "8liens NFT",
+        "symbol": "8liens",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/1294/small/7c8d2909d2d0b9860e64921c36a1321a.gif?1660018831"
+        },
+        "description": "8liens have been spawned by the Ethereals for travel to other dimensions. Their main purpose is exploration and discovery. There are six different sub-species and they do not have genders. They also possess different !vibes and traits.\r\n\r\n",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.0161,
+          "usd": 36.66
+        },
+        "market_cap": {
+          "native_currency": 156.89,
+          "usd": 357296
+        },
+        "volume_24h": {
+          "native_currency": 0.13,
+          "usd": 296.05
+        },
+        "floor_price_in_usd_24h_percentage_change": -2.91403,
+        "floor_price_24h_percentage_change": {
+          "usd": -2.9140328602133505,
+          "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -2.9140328602133625,
+          "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+          "usd": 571.3391344772475,
+          "native_currency": 591.4893617021276
+        },
+        "number_of_unique_addresses": 2164,
+        "number_of_unique_addresses_24h_percentage_change": 0.04623,
+        "volume_in_usd_24h_percentage_change": 571.33913,
+        "total_supply": 9745,
+        "one_day_sales": 1,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0.13,
+        "one_day_average_sale_price_24h_percentage_change": 591.489361702128,
+        "links": {
+          "homepage": "https://twitter.com/8liensNFT",
+          "twitter": "https://twitter.com/8liensNFT",
+          "discord": "https://discord.gg/dEjWAdAjSe"
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": 6.274539866934879,
+          "native_currency": 10.02092721632598
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": -19.050198157650172,
+          "native_currency": -19.087345461855463
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": -47.84910612261577,
+          "native_currency": -46.329232886725876
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 43.2465867103165,
+          "native_currency": 34.200216720846875
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": -52.35402646364305,
+          "native_currency": -72.94117647058825
+        },
+        "explorers": [
+          {
+            "name": "Etherscan",
+            "link": "https://etherscan.io/token/0x740c178e10662bBb050BDE257bFA318dEfE3cabC"
+          },
+          {
+            "name": "Ethplorer",
+            "link": "https://ethplorer.io/address/0x740c178e10662bBb050BDE257bFA318dEfE3cabC"
+          }
+        ]
+      },
+      {
+        "id": "adventurers-official-collection",
+        "contract_address": "0xee70b8439aecfea10411c7b6ba420d0ea240b8f1",
+        "asset_platform_id": "ethereum",
+        "name": "Adventurers",
+        "symbol": "Adventurers",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/2917/small/adventurers-official-collection.png?1675851609"
+        },
+        "description": "The official Adventurers NFT collection. Follow us on Twitter and join our Discord for the latest updates.",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.0142,
+          "usd": 32.15
+        },
+        "market_cap": {
+          "native_currency": 99.39,
+          "usd": 224998
+        },
+        "volume_24h": {
+          "native_currency": 0,
+          "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -3.25142,
+        "floor_price_24h_percentage_change": {
+          "usd": -3.2514245399889714,
+          "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -3.2514245399890487,
+          "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+          "usd": 0,
+          "native_currency": 0
+        },
+        "number_of_unique_addresses": 276,
+        "number_of_unique_addresses_24h_percentage_change": 0,
+        "volume_in_usd_24h_percentage_change": 0,
+        "total_supply": 6999,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": 0,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+          "homepage": "http://adventurers2023.xyz",
+          "twitter": "https://twitter.com/Adventurers2023",
+          "discord": "https://discord.gg/Adventurers"
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": -13.978241075139813,
+          "native_currency": -10.635619886721209
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": -22.67106248592747,
+          "native_currency": -22.404371584699454
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": -25.719133391540783,
+          "native_currency": -23.243243243243246
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 290.83143232108506,
+          "native_currency": 264.1025641025641
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": -78.8082042229538,
+          "native_currency": -84.56521739130434
+        },
+        "explorers": [
+          {
+            "name": "Etherscan",
+            "link": "https://etherscan.io/token/0xee70b8439aecfea10411c7b6ba420d0ea240b8f1"
+          },
+          {
+            "name": "Ethplorer",
+            "link": "https://ethplorer.io/address/0xee70b8439aecfea10411c7b6ba420d0ea240b8f1"
+          }
+        ]
+      },
+      {
+        "id": "alter-ego-punks",
+        "contract_address": "0xc581cc4582abd5aa4ab5b6d1f27f71d13518c9dd",
+        "asset_platform_id": "avalanche",
+        "name": "Alter Ego Punks",
+        "symbol": "AEPG0",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/1441/small/alter-ego-punks.png?1662020074"
+        },
+        "description": "Alter Ego Punks is the non generative genesis collection of the EgoVerse with a max supply of 1,000 NFTs.",
+        "native_currency": "avalanche",
+        "native_currency_symbol": "AVAX",
+        "floor_price": {
+          "native_currency": 2.5,
+          "usd": 86.91
+        },
+        "market_cap": {
+          "native_currency": 2500,
+          "usd": 86910
+        },
+        "volume_24h": {
+          "native_currency": 0,
+          "usd": 0
+        },
+        "floor_price_in_usd_24h_percentage_change": -9.73186,
+        "floor_price_24h_percentage_change": {
+          "usd": -9.731863757693503,
+          "native_currency": -7.063197026022305
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -9.731863757693503,
+          "native_currency": -7.063197026022305
+        },
+        "volume_24h_percentage_change": {
+          "usd": -100,
+          "native_currency": -100
+        },
+        "number_of_unique_addresses": 248,
+        "number_of_unique_addresses_24h_percentage_change": 1.22449,
+        "volume_in_usd_24h_percentage_change": -100,
+        "total_supply": 1000,
+        "one_day_sales": 0,
+        "one_day_sales_24h_percentage_change": -100,
+        "one_day_average_sale_price": 0,
+        "one_day_average_sale_price_24h_percentage_change": 0,
+        "links": {
+          "homepage": "https://theegoverse.com/",
+          "twitter": "https://twitter.com/TheEgoVerse",
+          "discord": "https://discord.gg/3tcsjK97wD"
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": 11.48074236426474,
+          "native_currency": 33.68983957219251
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": 26.399641089694676,
+          "native_currency": 74.22816921039794
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": 45.80180606386478,
+          "native_currency": 33.34044482372393
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 187.68517289579015,
+          "native_currency": 6.382978723404255
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": 44.49674285637398,
+          "native_currency": -50
+        },
+        "explorers": [
+          {
+            "name": "Avascan",
+            "link": "https://avascan.info/blockchain/c/address/0xc581cc4582abd5aa4ab5b6d1f27f71d13518c9dd/token"
+          }
+        ]
+      },
+      {
+        "id": "10ktf-stockroom",
+        "contract_address": "0x7daec605e9e2a1717326eedfd660601e2753a057",
+        "asset_platform_id": "ethereum",
+        "name": "10KTF Stockroom",
+        "symbol": "10KTF-STOCKROOM",
+        "image": {
+          "small": "https://assets.coingecko.com/nft_contracts/images/575/small/10ktf-stockroom.png?1657713184"
+        },
+        "description": "10KTF Stockroom is a collection of the finest Tools and Materials held by the esteemed customers of 10KTF for use in future endeavors.\r\n\r\nVisit <a rel=\"nofollow\" target=\"_blank\" href=\"//10ktf.com\">10ktf.com</a> for more details.",
+        "native_currency": "ethereum",
+        "native_currency_symbol": "ETH",
+        "floor_price": {
+          "native_currency": 0.0072,
+          "usd": 16.3
+        },
+        "market_cap": {
+          "native_currency": 0.144,
+          "usd": 325.93
+        },
+        "volume_24h": {
+          "native_currency": 1.43,
+          "usd": 3236.22
+        },
+        "floor_price_in_usd_24h_percentage_change": -2.94883,
+        "floor_price_24h_percentage_change": {
+          "usd": -2.948827559168636,
+          "native_currency": 0
+        },
+        "market_cap_24h_percentage_change": {
+          "usd": -2.9488275591692195,
+          "native_currency": 0
+        },
+        "volume_24h_percentage_change": {
+          "usd": 1286.2514121468553,
+          "native_currency": 1328.3716283716285
+        },
+        "number_of_unique_addresses": 4635,
+        "number_of_unique_addresses_24h_percentage_change": -0.10774,
+        "volume_in_usd_24h_percentage_change": 1286.25141,
+        "total_supply": 20,
+        "one_day_sales": 8,
+        "one_day_sales_24h_percentage_change": 300,
+        "one_day_average_sale_price": 0.178725,
+        "one_day_average_sale_price_24h_percentage_change": 257.092907092907,
+        "links": {
+          "homepage": "",
+          "twitter": "https://twitter.com/",
+          "discord": ""
+        },
+        "floor_price_7d_percentage_change": {
+          "usd": -22.541607562289407,
+          "native_currency": -20
+        },
+        "floor_price_14d_percentage_change": {
+          "usd": -8.624839732972415,
+          "native_currency": -8.860759493670885
+        },
+        "floor_price_30d_percentage_change": {
+          "usd": -11.232514258961675,
+          "native_currency": -8.860759493670885
+        },
+        "floor_price_60d_percentage_change": {
+          "usd": 12.34793321255775,
+          "native_currency": 4.3478260869565215
+        },
+        "floor_price_1y_percentage_change": {
+          "usd": -84.07262900116315,
+          "native_currency": -91
+        },
+        "explorers": [
+          {
+            "name": "Etherscan",
+            "link": "https://etherscan.io/token/0x7daec605e9e2a1717326eedfd660601e2753a057"
+          },
+          {
+            "name": "Ethplorer",
+            "link": "https://ethplorer.io/address/0x7daec605e9e2a1717326eedfd660601e2753a057"
+          }
+        ]
+      }
+]
