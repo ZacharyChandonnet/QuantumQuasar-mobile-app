@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, TextInput, TouchableOpacity, Text, ActivityIndicator, ImageBackground } from 'react-native';
-import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "../FirebaseConfig.js";
+import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, db, userRef } from '../FirebaseConfig.js';
+import { setDoc, doc } from 'firebase/firestore';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Login({ navigation }) {
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
@@ -24,7 +24,15 @@ export default function Login({ navigation }) {
     const signUp = async () => {
         setLoading(true);
         try {
-            await createUserWithEmailAndPassword(auth, email, password);
+            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+            await setDoc(doc(db, "users", user.uid), {
+                users: user.uid,
+                CoinsLike: [],
+                NftLike: [],
+                email: email,
+            });
+
             navigation.navigate('Details');
         } catch (error) {
             alert('Email ou mot de passe invalide');

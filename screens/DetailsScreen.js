@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 import Navbar from '../screens/Navbar';
-
+import { db } from '../FirebaseConfig.js';
 
 export default function DetailsScreen({ navigation }) {
     const [isLoading, setLoading] = useState(true);
     const [trendingCoins, setTrendingCoins] = useState([]);
     const [search, setSearch] = useState('');
+
+    const [favCoins, setFavCoins] = useState([]);
+
 
     useEffect(() => {
         const fetchData = async () => {
