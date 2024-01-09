@@ -7,6 +7,7 @@ import SearchScreen from './screens/Search';
 import Nft from './screens/Nft';
 import Coin from './screens/Coin';
 import Login from './screens/Login';
+import NftDetails from './screens/NftDetails';
 
 
 const Stack = createNativeStackNavigator();
@@ -67,6 +68,15 @@ export default function App() {
             headerShown: false
           }}
         />
+        <Stack.Screen
+        name="NftDetails"
+        component={NftDetails}
+        options={{
+          title: 'NftDetails',
+          headerShown: false
+        }}
+        />
+
 
       </Stack.Navigator>
     </NavigationContainer>

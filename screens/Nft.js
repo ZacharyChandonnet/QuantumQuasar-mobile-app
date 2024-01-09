@@ -1,60 +1,49 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, Animated, ActivityIndicator } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import { FlatList } from 'react-native';
-import Navbar from '../screens/Navbar';
-
+import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image, ActivityIndicator } from 'react-native';
+import NftsData from '../Nfts.json';
+import NavBar from './Navbar';
 
 export default function Nft({ navigation }) {
     const [isLoading, setLoading] = useState(true);
-    const [Nft, setNft] = useState([]);
+    const [randomNfts, setRandomNfts] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://api.coingecko.com/api/v3/nfts/list')
-                const resultat = await response.json();
-                if (Array.isArray(resultat)) {
-                    const randomNfts = resultat.sort(() => 0.5 - Math.random()).slice(0, 20);
-                    setNft(randomNfts);
-                    console.log(randomNfts);
-                    setTimeout(() => {
-                        setLoading(false);
-                    }, 500);
-                } else {
-                    console.error("API response is not an array:", resultat);
-                }
-            } catch (error) {
-                console.error("Error fetching NFT:", error);
-            }
-        };
-        fetchData();
+        const shuffledNfts = [...NftsData].sort(() => Math.random() - 0.5);
+        setRandomNfts(shuffledNfts);
+        setTimeout(() => {
+            setLoading(false);
+        }, 500);
     }, []);
+
     if (isLoading) {
         return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
     }
     return (
         <View style={styles.container}>
-            <Navbar style={styles.navBar} navigation={navigation} />
+            <NavBar style={styles.navBar} navigation={navigation} />
             <FlatList
-                data={Nft}
+                data={randomNfts}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
                     <TouchableOpacity
                         style={styles.itemContainer}
-                        onPress={() => navigation.navigate('Details', { id: item.id })}
+                        onPress={() => navigation.navigate('NftDetails', { id: item.id })}
                     >
+                        <Image
+                            source={{ uri: item.image.small }}
+                            style={styles.cryptoImage}
+                        />
                         <View style={styles.textContainer}>
                             <Text style={styles.cryptoName}>{item.name}</Text>
+                            <Text style={styles.cryptoSymbol}>{item.symbol.toUpperCase()}</Text>
+                            <Text style={styles.price}>{item.floor_price.usd} USD</Text>
                         </View>
                     </TouchableOpacity>
                 )}
             />
-        </View >
-    )
-
+        </View>
+    );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -118,6 +107,20 @@ const styles = StyleSheet.create({
         fontSize: 14,
         marginTop: 5,
     },
-})
-
-
+    searchBarContainer: {
+        width: '90%',
+        marginTop: 20,
+        marginBottom: 20,
+        backgroundColor: 'transparent',
+        borderTopColor: 'transparent',
+        borderBottomColor: 'transparent',
+        paddingHorizontal: 0,
+        paddingVertical: 0,
+    },
+    searchBarInputContainer: {
+        backgroundColor: 'white',
+        borderWidth: 1,
+        borderRadius: 10,
+        borderColor: '#555',
+    },
+});
