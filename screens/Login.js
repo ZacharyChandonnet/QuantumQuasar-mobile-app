@@ -36,11 +36,7 @@ export default function Login({ navigation }) {
     return (
         <View style={styles.container}>
             <ImageBackground source={require('../assets/login.jpg')} style={styles.backgroundImage}>
-                <Ionicons name="person-circle-outline" style={
-                    {
-                        marginBottom: 20,
-                    }
-                } size={100} color="white" />
+                <Ionicons name="person-circle-outline" style={{ marginBottom: 20 }} size={100} color="white" />
                 <View style={styles.formContainer}>
                     <View style={styles.inputContainer}>
                         <Ionicons name="mail-outline" size={24} color="orange" style={styles.icon} />
@@ -68,10 +64,10 @@ export default function Login({ navigation }) {
                     ) : (
                         <>
                             <TouchableOpacity style={styles.button} onPress={signIn}>
-                                <Text style={styles.buttonText}>Login</Text>
+                                <Text style={styles.buttonText}>Se connecter</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.button} onPress={signUp}>
-                                <Text style={styles.buttonText}>Sign Up</Text>
+                            <TouchableOpacity style={styles.buttonSignUp} onPress={signUp}>
+                                <Text style={styles.buttonText}>S'inscrire</Text>
                             </TouchableOpacity>
                         </>
                     )}
@@ -104,7 +100,6 @@ const styles = StyleSheet.create({
         height: 400,
         alignItems: 'center',
         justifyContent: 'center',
-
     },
     inputContainer: {
         flexDirection: 'row',
@@ -123,6 +118,15 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: 'orange',
+        borderRadius: 10,
+        padding: 15,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 10,
+        width: '100%',
+    },
+    buttonSignUp: {
+        backgroundColor: 'rgba(255, 165, 0, 0.75)',
         borderRadius: 10,
         padding: 15,
         alignItems: 'center',
