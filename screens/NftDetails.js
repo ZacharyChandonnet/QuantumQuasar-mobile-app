@@ -18,10 +18,12 @@ export default function NftDetails({ route }) {
             try {
                 const response = await fetch(`https://api.coingecko.com/api/v3/nfts/${id}`);
                 const result = await response.json();
-                const floorPriceData = Object.entries(result.floor_price?.prices || {}).map(([time, price]) => ({
-                    time,
-                    price: price.native_currency,
-                }));
+                const floorPriceData = [
+                    {
+                        time: 'Now', // Vous pouvez définir cela comme vous le souhaitez, car il n'y a pas de données temporelles
+                        price: result.floor_price?.native_currency || 0,
+                    },
+                ];
                 setNftData(floorPriceData);
                 setNftDetails(result);
                 setLoading(false);
@@ -54,7 +56,7 @@ export default function NftDetails({ route }) {
 
                     <TouchableOpacity onPress={toggleGraph} style={styles.toggleButton}>
                         <Text style={styles.toggleButtonText}>
-                            {seeGraph ? 'Hide the Chart' : 'Show the Chart'}
+                            {seeGraph ? 'Masquer le graphique' : 'Afficher le graphique'}
                         </Text>
                     </TouchableOpacity>
 
@@ -65,7 +67,10 @@ export default function NftDetails({ route }) {
                                     labels: nftData.map(dataPoint => dataPoint.time),
                                     datasets: [
                                         {
-                                            data: nftData.map(dataPoint => dataPoint.price),
+                                            data: nftData.map(dataPoint => {
+                                                const parsedPrice = parseFloat(dataPoint.price);
+                                                return isNaN(parsedPrice) ? 0 : parsedPrice;
+                                            }),
                                         },
                                     ],
                                 }}
@@ -101,6 +106,7 @@ export default function NftDetails({ route }) {
                             <Text style={styles.noDataText}>No data available</Text>
                         )
                     )}
+
                 </View>
             </ImageBackground>
         </ScrollView>
