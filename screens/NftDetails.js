@@ -141,9 +141,10 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: '100%',
-        resizeMode: 'cover',
+        resizeMode: 'contain',
         justifyContent: 'center',
-        alignItems: 'center',
+        position: 'absolute',
+        bottom: 0,
     },
     toggleButton: {
         backgroundColor: 'orange',
