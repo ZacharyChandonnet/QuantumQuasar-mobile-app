@@ -1,29 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image, TouchableOpacity } from 'react-native';
+import { SearchBar } from 'react-native-elements';
 
 export default function DetailsScreen({ navigation }) {
-
     const [isLoading, setLoading] = useState(true);
     const [trendingCoins, setTrendingCoins] = useState([]);
+    const [search, setSearch] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://api.coingecko.com/api/v3/search/trending');
+                const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
                 const result = await response.json();
-                const trendingData = result.coins || [];
-                setTimeout(() => {
-                    setTrendingCoins(trendingData);
-                    setLoading(false);
-                }, 500);
+                
+                if (Array.isArray(result)) {
+                    setTrendingCoins(result);
+                } else {
+                    console.error("API response is not an array:", result);
+                }
+
+                setLoading(false);
             } catch (error) {
-                console.error("Error fetching trending coins:", error);
+                console.error("Error fetching coins:", error);
                 setLoading(false);
             }
         };
 
         fetchData();
     }, []);
+
+    const filteredCoins = trendingCoins.filter(
+        coin => coin.name.toLowerCase().includes(search.toLowerCase()) || 
+                coin.symbol.toLowerCase().includes(search.toLowerCase())
+    );
 
     if (isLoading) {
         return <ActivityIndicator size="large" color="orange" style={styles.isLoading} />;
@@ -40,19 +49,27 @@ export default function DetailsScreen({ navigation }) {
                     <Text style={styles.navText}>Recherche</Text>
                 </TouchableOpacity>
             </View>
+            <SearchBar
+                placeholder="Rechercher votre crypto..."
+                value={search}
+                onChangeText={setSearch}
+                containerStyle={styles.searchBarContainer}
+                inputContainerStyle={styles.searchBarInputContainer}
+            />
             <FlatList
                 showsVerticalScrollIndicator={false}
-                data={trendingCoins}
-                keyExtractor={(item) => item.item.id.toString()}
+                data={filteredCoins}
+                keyExtractor={(item) => item.id ? item.id.toString() : Math.random().toString()}
                 renderItem={({ item }) => (
-                    <TouchableOpacity style={styles.itemContainer} onPress={() => navigation.navigate('Coin', { id: item.item.id })}>
+                    <TouchableOpacity style={styles.itemContainer} onPress={() => navigation.navigate('Coin', { id: item.id })}>
                         <Image
                             style={styles.cryptoImage}
-                            source={{ uri: item.item.large }}
+                            source={{ uri: item.image }}
                         />
                         <View style={styles.textContainer}>
-                            <Text style={styles.cryptoName}>{item.item.name}</Text>
-                            <Text style={styles.cryptoSymbol}>{item.item.symbol}</Text>
+                            <Text style={styles.cryptoName}>{item.name}</Text>
+                            <Text style={styles.cryptoSymbol}>{item.symbol.toUpperCase()}</Text>
+                            <Text style={styles.price}>{item.current_price} USD</Text>
                         </View>
                     </TouchableOpacity>
                 )}
@@ -66,37 +83,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#121212',
         alignItems: 'center',
-    },
-    textContainer: {
-        marginLeft: 15,
-    },
-    cryptoName: {
-        color: 'white',
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    cryptoSymbol: {
-        color: '#888',
-        fontSize: 14,
-    },
-    isLoading: {
-        flex: 1,
-        backgroundColor: '#121212',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    itemContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: 75,
-        borderBottomWidth: 1,
-        borderBottomColor: '#333',
-        width: '100%',
-    },
-    cryptoImage: {
-        width: 40,
-        height: 40,
-        borderRadius: 20,
     },
     navBar: {
         flexDirection: 'row',
@@ -117,5 +103,58 @@ const styles = StyleSheet.create({
         color: 'orange',
         fontSize: 24,
         fontWeight: 'bold',
+    },
+    isLoading: {
+        flex: 1,
+        backgroundColor: '#121212',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    itemContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 70,
+        borderBottomWidth: 1,
+        borderBottomColor: '#333',
+        width: '100%',
+    },
+    cryptoImage: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+    },
+    textContainer: {
+        marginLeft: 15,
+    },
+    cryptoName: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+    cryptoSymbol: {
+        color: '#888',
+        fontSize: 14,
+        marginTop: 5,
+    },
+    price: {
+        color: 'white',
+        fontSize: 14,
+        marginTop: 5,
+    },
+    searchBarContainer: {
+        width: '90%',
+        marginTop: 20,
+        marginBottom: 20,
+        backgroundColor: 'transparent',
+        borderTopColor: 'transparent',
+        borderBottomColor: 'transparent',
+        paddingHorizontal: 0,
+        paddingVertical: 0,
+    },
+    searchBarInputContainer: {
+        backgroundColor: 'white',
+        borderWidth: 1,
+        borderRadius: 10,
+        borderColor: '#555',
     },
 });
