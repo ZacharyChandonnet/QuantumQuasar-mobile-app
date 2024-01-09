@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
+import Navbar from '../screens/Navbar';
+
 
 export default function DetailsScreen({ navigation }) {
     const [isLoading, setLoading] = useState(true);
@@ -41,15 +43,7 @@ export default function DetailsScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <View style={styles.navBar}>
-                <Text style={styles.title}>Tendances</Text>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Nft')}>
-                    <Text style={styles.navText}>NFT</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Search')}>
-                    <Text style={styles.navText}>Recherche</Text>
-                </TouchableOpacity>
-            </View>
+            <Navbar style={styles.navBar} navigation={navigation} />
             <SearchBar
                 placeholder="Rechercher votre crypto..."
                 value={search}

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, Animated, ActivityIndicator } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { FlatList } from 'react-native-web';
+import { FlatList } from 'react-native';
+import Navbar from '../screens/Navbar';
+
 
 export default function Nft({ navigation }) {
     const [isLoading, setLoading] = useState(true);
@@ -33,15 +35,7 @@ export default function Nft({ navigation }) {
     }
     return (
         <View style={styles.container}>
-            <View style={styles.navBar}>
-                <Text style={styles.title}>Tendances</Text>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Nft')}>
-                    <Text style={styles.navText}>NFT</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Search')}>
-                    <Text style={styles.navText}>Recherche</Text>
-                </TouchableOpacity>
-            </View>
+            <Navbar style={styles.navBar} navigation={navigation} />
             <FlatList
                 data={Nft}
                 keyExtractor={(item) => item.id.toString()}
