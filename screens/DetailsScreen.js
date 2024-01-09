@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 import Navbar from '../screens/Navbar';
-import { db } from '../FirebaseConfig.js';
+import FavoriteCoin from '../screens/FavoriteCoin';
+
 
 export default function DetailsScreen({ navigation }) {
     const [isLoading, setLoading] = useState(true);
@@ -68,6 +69,9 @@ export default function DetailsScreen({ navigation }) {
                             <Text style={styles.cryptoName}>{item.name}</Text>
                             <Text style={styles.cryptoSymbol}>{item.symbol.toUpperCase()}</Text>
                             <Text style={styles.price}>{item.current_price} USD</Text>
+                        </View>
+                        <View style={styles.favoriteCoinContainer}>
+                            <FavoriteCoin />
                         </View>
                     </TouchableOpacity>
                 )}
@@ -155,4 +159,10 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: '#555',
     },
+    favoriteCoinContainer: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
+    },
+
 });
