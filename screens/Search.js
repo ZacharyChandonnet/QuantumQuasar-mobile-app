@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity,Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { auth, db } from '../FirebaseConfig.js';
 import { doc, getDoc } from 'firebase/firestore';
 import Navbar from "../screens/Navbar";
-
 
 export default function Search({ navigation }) {
     const [userCoins, setUserCoins] = useState([]);
@@ -52,23 +51,16 @@ export default function Search({ navigation }) {
         <View style={styles.container}>
             <Navbar style={styles.navBar} navigation={navigation} />
             <Text style={styles.text}>Mes jetons favoris</Text>
-            <FlatList
-                showsVerticalScrollIndicator={false}
-                data={dataCoins}
-                keyExtractor={(item) => item.id ? item.id.toString() : Math.random().toString()}
-                renderItem={({ item }) => (
-                    <TouchableOpacity style={styles.itemContainer} onPress={() => navigation.navigate('Coin', { id: item.id })}>
-                        <Image
-                            style={styles.cryptoImage}
-                            source={{ uri: item.image }}
-                        />
-                        <View style={styles.textContainer}>
-                            <Text style={styles.cryptoName}>{item.name}</Text>
-                            <Text style={styles.price}>{item.current_price} USD</Text>
-                        </View>
+            <ScrollView>
+                {dataCoins.map((item, index) => (
+                    <TouchableOpacity style={styles.coinItem} key={index}>
+                        <Image source={{ uri: item.image?.small }} style={{ width: 30, height: 30 }} />
+                        <Text style={styles.coinSymbol}>{item.symbol?.toUpperCase()}</Text>
+                        <Text style={styles.coinName}>{item.name}</Text>
+                        <Text style={styles.coinPrice}>${item.market_data?.current_price?.usd?.toFixed(2)}</Text>
                     </TouchableOpacity>
-                )}
-            />
+                ))}
+            </ScrollView>
         </View>
     );
 }
@@ -80,40 +72,35 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#121212',
     },
-    itemContainer: {
+    text: {
+        color: 'white',
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginTop: 30,
+        marginBottom: 30,
+    },
+    coinItem: {
         flexDirection: 'row',
         alignItems: 'center',
-        padding: 70,
+        justifyContent: 'space-between',
         borderBottomWidth: 1,
         borderBottomColor: '#333',
         width: '100%',
     },
-    cryptoImage: {
-        width: 40,
-        height: 40,
-        borderRadius: 20,
-    },
-    textContainer: {
-        marginLeft: 15,
-    },
-    cryptoName: {
-        color: 'white',
-        fontSize: 16,
+    
+    
+    coinSymbol: {
+        color: '#fff',
+        fontSize: 18,
         fontWeight: 'bold',
     },
-    cryptoSymbol: {
-        color: '#888',
-        fontSize: 14,
-        marginTop: 5,
+    coinName: {
+        color: '#ddd',
+        fontSize: 16,
     },
-    price: {
-        color: 'white',
-        fontSize: 14,
-        marginTop: 5,
-    },
-    text: {
-        color: 'white',
-        fontSize: 24,
+    coinPrice: {
+        color: '#34c759',
+        fontSize: 18,
         fontWeight: 'bold',
     },
 });
