@@ -8,6 +8,7 @@ export default function Search({ navigation }) {
     const [userCoins, setUserCoins] = useState([]);
     const [loading, setLoading] = useState(true);
     const [dataCoins, setDataCoins] = useState([]);
+    const [dataNfts, setDataNfts] = useState([]);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(async (user) => {
@@ -16,11 +17,15 @@ export default function Search({ navigation }) {
                 const userDocRef = doc(db, 'users', userId);
                 const userDocSnapshot = await getDoc(userDocRef);
 
+
                 if (userDocSnapshot.exists()) {
                     const coinsLike = userDocSnapshot.data().CoinsLike || [];
                     setUserCoins(coinsLike);
+                    const nftsLike = userDocSnapshot.data().NftLike || [];
+                    setDataNfts(nftsLike);
                     setLoading(false);
                 }
+
             } else {
                 setLoading(false);
             }
@@ -46,7 +51,7 @@ export default function Search({ navigation }) {
 
         fetchCoinsData();
     }, [userCoins, loading]);
-
+    console.log(dataNfts);
     return (
         <View style={styles.container}>
             <Navbar style={styles.navBar} navigation={navigation} />
@@ -58,6 +63,15 @@ export default function Search({ navigation }) {
                         <Text style={styles.coinSymbol}>{item.symbol?.toUpperCase()}</Text>
                         <Text style={styles.coinName}>{item.name}</Text>
                         <Text style={styles.coinPrice}>${item.market_data?.current_price?.usd?.toFixed(2)}</Text>
+                    </TouchableOpacity>
+                ))}
+                <Text style={styles.text}>Mes NFT favoris</Text>
+                {dataNfts.map((item, index) => (
+                    <TouchableOpacity style={styles.coinItem} key={index}>
+                        <Image source={{ uri: item.image }} style={{ width: 30, height: 30 }} />
+                        <Text style={styles.coinSymbol}>{item.symbol?.toUpperCase()}</Text>
+                        <Text style={styles.coinName}>{item.name}</Text>
+                        <Text style={styles.coinPrice}>${item.price.toFixed(2)}</Text>
                     </TouchableOpacity>
                 ))}
             </ScrollView>
@@ -78,6 +92,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginTop: 30,
         marginBottom: 30,
+        borderBottom: '1px solid black',
     },
     coinItem: {
         flexDirection: 'row',
@@ -87,8 +102,8 @@ const styles = StyleSheet.create({
         borderBottomColor: '#333',
         width: '100%',
     },
-    
-    
+
+
     coinSymbol: {
         color: '#fff',
         fontSize: 18,

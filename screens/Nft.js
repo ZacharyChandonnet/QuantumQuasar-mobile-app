@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image, ActivityIndicator } from 'react-native';
 import NftsData from '../Nfts.json';
 import NavBar from './Navbar';
+import FavoriteNft from '../screens/FavoriteNft';
 
 export default function Nft({ navigation }) {
     const [isLoading, setLoading] = useState(true);
@@ -37,6 +38,9 @@ export default function Nft({ navigation }) {
                             <Text style={styles.cryptoName}>{item.name}</Text>
                             <Text style={styles.cryptoSymbol}>{item.symbol.toUpperCase()}</Text>
                             <Text style={styles.price}>{item.floor_price.usd} USD</Text>
+                        </View>
+                        <View style={styles.favoriteCoinContainer}>
+                            <FavoriteNft nftId={item.id} name={item.name} price={item.floor_price.usd} image={item.image.small} symbol={item.symbol}/>
                         </View>
                     </TouchableOpacity>
                 )}
@@ -122,5 +126,10 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         borderColor: '#555',
+    },
+    favoriteCoinContainer: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
     },
 });
