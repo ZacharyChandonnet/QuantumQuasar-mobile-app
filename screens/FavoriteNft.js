@@ -4,9 +4,10 @@ import { db, auth } from '../FirebaseConfig.js';
 import { Ionicons } from '@expo/vector-icons';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function FavoriteCoin({nftId, name, price, image, symbol}) {
+export default function FavoriteCoin({ nftId, name, price, image, symbol }) {
     const [isFavorite, setFavorite] = useState(false);
     const [nftLike, setNftLike] = useState();
+    const [nftLikes, setNftLikes] = useState();
 
     useEffect(() => {
         const fetchUserFavorites = async () => {
@@ -21,12 +22,39 @@ export default function FavoriteCoin({nftId, name, price, image, symbol}) {
                     symbol: symbol
                 }
                 setFavorite(userFavorites.includes(newNftLike));
-                setNftLike(newNftLike);     
+                setNftLike(newNftLike);
             }
         };
 
         fetchUserFavorites();
     }, [nftId]);
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(async (user) => {
+            if (user) {
+                const userId = user.uid;
+                const userDocRef = doc(db, 'users', userId);
+                const userDocSnapshot = await getDoc(userDocRef);
+
+                if (userDocSnapshot.exists()) {
+                    const nftsLike = userDocSnapshot.data().NftLike || [];
+                    setNftLikes(nftsLike);
+                }
+            }
+        });
+
+        return () => unsubscribe();
+    }, []);
+
+    useEffect(() => {
+        if (nftLikes) {
+            nftLikes.forEach((item) => {
+                if (item.id === nftId) {
+                    setFavorite(true);
+                }
+            });
+        }
+    }, [nftLikes, nftId]);
 
     const toggleFavorite = async () => {
         if (isFavorite) {
