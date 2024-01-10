@@ -51,7 +51,6 @@ export default function Search({ navigation }) {
 
         fetchCoinsData();
     }, [userCoins, loading]);
-    console.log(dataNfts);
     return (
         <View style={styles.container}>
             <Navbar style={styles.navBar} navigation={navigation} />
@@ -105,12 +104,6 @@ const styles = StyleSheet.create({
         width: '100%',
         
     },
-<<<<<<< HEAD
-
-
-=======
-    
->>>>>>> 9e3f429cff190322987a90788264631df001e934
     coinSymbol: {
         color: '#fff',
         fontSize: 18,
