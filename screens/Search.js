@@ -97,25 +97,35 @@ const styles = StyleSheet.create({
     coinItem: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 15,
         borderBottomWidth: 1,
         borderBottomColor: '#333',
         width: '100%',
+        
     },
+<<<<<<< HEAD
 
 
+=======
+    
+>>>>>>> 9e3f429cff190322987a90788264631df001e934
     coinSymbol: {
         color: '#fff',
         fontSize: 18,
         fontWeight: 'bold',
+        marginLeft: 10,
     },
     coinName: {
         color: '#ddd',
         fontSize: 16,
+        marginLeft: 10,
     },
     coinPrice: {
         color: '#34c759',
         fontSize: 18,
         fontWeight: 'bold',
+        marginLeft: 'auto',
     },
 });
