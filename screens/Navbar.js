@@ -14,10 +14,10 @@ export default function NavBar({ navigation }) {
     return (
         <View style={styles.navBar}>
             <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Details')}>
-                <Text style={styles.navText}>Tendances</Text>
+                <Text style={styles.navText}>Coins</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Nft')}>
-                <Text style={styles.navText}>NFT</Text>
+                <Text style={styles.navText}>NFT's</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Search')}>
                 <Text style={styles.navText}>Favoris</Text>
