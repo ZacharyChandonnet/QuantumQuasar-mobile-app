@@ -17,7 +17,6 @@ export default function Search({ navigation }) {
                 const userDocRef = doc(db, 'users', userId);
                 const userDocSnapshot = await getDoc(userDocRef);
 
-
                 if (userDocSnapshot.exists()) {
                     const coinsLike = userDocSnapshot.data().CoinsLike || [];
                     setUserCoins(coinsLike);
@@ -51,6 +50,7 @@ export default function Search({ navigation }) {
 
         fetchCoinsData();
     }, [userCoins, loading]);
+
     return (
         <View style={styles.container}>
             <Navbar style={styles.navBar} navigation={navigation} />
@@ -64,7 +64,9 @@ export default function Search({ navigation }) {
                         <Text style={styles.coinPrice}>${item.market_data?.current_price?.usd?.toFixed(2)}</Text>
                     </TouchableOpacity>
                 ))}
-                <Text style={styles.text}>Mes NFT favoris</Text>
+                <View style={styles.centeredTextContainer}>
+                    <Text style={styles.text}>Mes NFT's favoris</Text>
+                </View>
                 {dataNfts.map((item, index) => (
                     <TouchableOpacity style={styles.coinItem} key={index}>
                         <Image source={{ uri: item.image }} style={{ width: 30, height: 30 }} />
@@ -91,7 +93,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginTop: 30,
         marginBottom: 30,
-        borderBottom: '1px solid black',
+        borderBottomWidth: 1,
+        borderBottomColor: '#333',
     },
     coinItem: {
         flexDirection: 'row',
@@ -102,7 +105,6 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#333',
         width: '100%',
-        
     },
     coinSymbol: {
         color: '#fff',
@@ -121,4 +123,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginLeft: 'auto',
     },
+    centeredTextContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+    }
 });
