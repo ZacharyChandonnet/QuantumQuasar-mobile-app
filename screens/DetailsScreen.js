@@ -9,8 +9,9 @@ export default function DetailsScreen({ navigation }) {
     const [isLoading, setLoading] = useState(true);
     const [trendingCoins, setTrendingCoins] = useState([]);
     const [search, setSearch] = useState('');
+    const [isFavorite, setFavorite] = useState(false);
 
-    const [favCoins, setFavCoins] = useState([]);
+ 
 
 
     useEffect(() => {
@@ -18,9 +19,10 @@ export default function DetailsScreen({ navigation }) {
             try {
                 const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
                 const result = await response.json();
-
+                
                 if (Array.isArray(result)) {
                     setTrendingCoins(result);
+                    console.log(trendingCoins.id);
                 } else {
                     console.error("API response is not an array:", result);
                 }
@@ -71,7 +73,7 @@ export default function DetailsScreen({ navigation }) {
                             <Text style={styles.price}>{item.current_price} USD</Text>
                         </View>
                         <View style={styles.favoriteCoinContainer}>
-                            <FavoriteCoin />
+                            <FavoriteCoin coinId={item.id} />
                         </View>
                     </TouchableOpacity>
                 )}
