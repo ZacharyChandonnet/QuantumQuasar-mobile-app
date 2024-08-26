@@ -5,3 +5,11 @@
 - Engin de recherche 
 - Ajout de favoris selon l’utilisateur (firebase)
 - Notifications sur l’application
+
+
+## Stack utilisé
+
+- React native
+- Firebase
+- FramerMotion
+- APIrest
